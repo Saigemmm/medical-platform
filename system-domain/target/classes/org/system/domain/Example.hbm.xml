@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-4 15:57:54 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+  <class name="org.system.domain.Example" table="T_EXAMPLE">
+    <id name="exampleId" type="java.lang.Integer">
+        <column name="EXAMPLE_ID"></column>
+        <generator class="sequence">
+            <param name="sequence">S_EXAMPLE__EXAMPLE_ID</param>
+        </generator>  
+    </id>
+    <property name="exampleName" type="java.lang.String">
+		<column name="EXAMPLE_NAME"></column>
+    </property>
+    <property name="exampleDesc" type="java.lang.String">
+		<column name="EXAMPLE_DESC"></column>
+    </property> 
+    <property name="insertTime" type="java.sql.Timestamp">
+		<column name="INSERT_TIME"></column>
+    </property>
+    <property name="goodsImg" type="java.lang.String">
+		<column name="IMAGES"></column>
+    </property>                 
+  </class>
+</hibernate-mapping>

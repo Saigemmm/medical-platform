@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-4 15:57:54 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="org.system.domain.User" table="T_USER">
+		<id name="userId" type="java.lang.Integer">
+			<column name="USER_ID"></column>
+			<generator class="sequence">
+				<param name="sequence">S_USER__USER_ID</param>
+			</generator>
+		</id>
+		<property name="userName" type="java.lang.String">
+			<column name="USER_NAME"></column>
+		</property>
+		<property name="userType" type="java.lang.String">
+			<column name="USER_TYPE"></column>
+		</property>
+		<property name="realName" type="java.lang.String">
+			<column name="REAL_NAME"></column>
+		</property>
+		<property name="gender" type="java.lang.String">
+			<column name="GENDER"></column>
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="PASSWORD"></column>
+		</property>
+		<property name="email" type="java.lang.String">
+			<column name="EMAIL"></column>
+		</property>
+		<property name="phoneNumber" type="java.lang.String">
+			<column name="PHONE_NUMBER"></column>
+		</property>
+		<property name="address" type="java.lang.String">
+			<column name="ADDRESS"></column>
+		</property>
+		<property name="brithday" type="java.sql.Date">
+		    <column name="BIRTHDAY"></column>
+		</property>
+		<property name="productId" type="java.lang.Integer">
+		    <column name="PRODUCT_ID"></column>
+		</property>
+		<property name="userInforId" type="java.lang.Integer">
+		    <column name="USER_INFOR_ID"></column>
+		</property>
+		<property name="payerId" type="java.lang.Integer">
+		    <column name="PAYER_ID"></column>
+		</property>
+	</class>
+</hibernate-mapping>

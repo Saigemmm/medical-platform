@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <!-- <constant name="struts.enable.DynamicMethodInvocation" value="true" /> -->
+	<constant name="struts.action.extension" value="action" />
+	<constant name="struts.multipart.maxSize" value="200000000" />
+	<package name="front"  extends="struts-default" strict-method-invocation="false">
+		<interceptors>
+			<interceptor name="permission" class="org.system.web.interceptor.PermissionInterceptor">
+				<param name="excludeMethods">index,toLogin,doLogin,toRegister,doRegister,infor,selection,profile</param>
+			</interceptor>
+			<interceptor-stack name="permissionStack">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="permission" />
+			</interceptor-stack>			
+		</interceptors>
+		<global-results>
+			<result name="login">/login.jsp</result>
+			<result name="index" type="redirect">/</result>
+		</global-results>				
+
+ 		<action name="user_*" class="userAction" method="{1}">
+			<result name="register">/register.jsp</result>
+            <result name="registerSuccess">/registerSuccess.jsp</result>
+            <result name="profile">/persionalDetail.jsp</result>
+            <result name="editProfile">/editProfile.jsp</result>				
+			<interceptor-ref name="permissionStack"></interceptor-ref>
+		</action> 
+		<action name="infor_*" class="inforAction" method="{1}">
+		    <result name="infor">/Information.jsp</result>
+		    <result name="submit">/selection.jsp</result>
+		    <interceptor-ref name="permissionStack"></interceptor-ref>
+		</action>
+		<action name="introduce_*" class="introduceAction" method="{1}">
+		    <result name="introduce">/introduce.jsp</result>
+		</action>
+		<action name="solution_*" class="solutionAction" method="{1}">
+		    <result name="default">/solution.jsp</result>
+		    <result name="list">/solutionList.jsp</result>
+		</action>
+		<action name="selection_*" class="selectionAction" method="{1}">
+		    <result name="selection">/selection.jsp</result>
+		    <interceptor-ref name="permissionStack"></interceptor-ref>
+		</action>		  
+	</package>
+</struts>        

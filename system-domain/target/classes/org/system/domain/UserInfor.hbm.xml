@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-4 15:57:54 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+  <class name="org.system.domain.UserInfor" table="T_USER_INFOR">
+    <id name="userInforId" type="java.lang.Integer">
+        <column name="USER_INFOR_ID"></column>
+        <generator class="sequence">
+            <param name="sequence">S_USER_INFOR__USER_INFOR_ID</param>
+        </generator>  
+    </id>
+    <property name="userInforName" type="java.lang.String">
+		<column name="INFOR_NAME"></column>
+    </property>
+    <property name="inforType" type="java.lang.String">
+		<column name="INFOR_TYPE"></column>
+    </property> 
+    <property name="isHeathly" type="java.lang.String">
+		<column name="IS_HEATHLY"></column>
+    </property>
+    <property name="medicalResult" type="java.lang.String">
+		<column name="MEDICAL_RESULT"></column>
+    </property>
+    <property name="insertTime" type="java.sql.Timestamp">
+		<column name="INSERT_TIME"></column>
+    </property> 
+    <property name="userId" type="java.lang.Integer">
+		<column name="USER_ID"></column>
+    </property>                   
+  </class>
+</hibernate-mapping>

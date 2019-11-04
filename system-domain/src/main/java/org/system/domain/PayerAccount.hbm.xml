@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-4 15:57:54 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+  <class name="org.system.domain.PayerAccount" table="T_PAYER_ACCOUNT" >
+    <id name="payId" type="java.lang.Integer">
+        <column name="PAY_ID"></column>
+        <generator class="sequence">
+            <param name="sequence">S_PAYERACCOUNT_PAYERACCOUNT_ID</param>
+        </generator>  
+    </id>
+    <property name="payerId" type="java.lang.String">
+		<column name="PAYER_ID"></column>
+    </property>
+    <property name="payMode" type="java.lang.String">
+		<column name="PAY_MODE"></column>
+    </property> 
+    <property name="accountId" type="java.lang.String">
+		<column name="ACCOUNT_ID"></column>
+    </property>
+    <property name="bankType" type="java.lang.String">
+		<column name="BANK_TYPE"></column>
+    </property>
+    <property name="payTime" type="java.sql.Date">
+		<column name="PAY_TIME"></column>
+    </property>                   
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,138 @@
+body{
+	padding: 0px;
+	margin:0px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	text-align:center;
+}
+
+img{
+	border: none;
+}
+a{
+	text-decoration:none;
+	color:#ff0000;
+}
+
+a:hover{
+	color:#000000;
+}
+
+#site{
+	width: 980px;
+	margin: auto;
+	padding: 0px;
+}
+
+#topmenu{
+	height: 35px;
+}
+
+#topmenu ul{
+	height: 45px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#topmenu ul li{
+	float: left;
+	width: 100px;
+	height: 35px;
+	background: url(images/menu.gif) no-repeat right top;
+	border-right:1px solid #FFFFFF;
+	
+}
+
+#topmenu ul li a{
+	float: left;
+	height: 20px;
+    width: 100px;
+	padding: 10px 0 0 0;
+	text-align:center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: smaller;
+	font-weight: bold;
+	color: #000000;
+}
+
+#topmenu ul li a:hover {
+	background: url(images/menuhover.gif) repeat-x;
+	color: #FFFFFF;
+	height: 20px;
+}
+
+#header{
+	height: 250px;
+	padding:0px;
+	margin: 0px;
+	background:#9f8ded url(images/header.jpg) no-repeat center;
+}
+
+#header h1{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:40px;
+	letter-spacing : 5px;
+	margin : 0 0px 0 35px;
+	padding : 50px 0px 0px 50px;
+	background : transparent;
+	color : #fff;
+	text-align:left;
+}
+
+#header small{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	letter-spacing : 5px;
+	margin : 0 0px 0 35px;
+	padding : 50px 0px 0px 50px;
+	background : transparent;
+	color : #fff;
+	text-align:right;
+}
+
+#left{
+	width: 130px;
+	padding-left: 10px;
+	padding-right: 10px;
+	float:left;
+
+}
+
+#right{
+	border-left:1px #800000 dashed;
+	float:right;
+	width: 809px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+#left h2{
+	color:#000000;
+	text-align:center;
+	background: url(images/left.gif);
+}
+
+#left ul{
+	list-style:none;
+}
+
+#right h2{
+	color:#000000;
+	text-align:left;
+	border-bottom: 1px solid #999999;
+}
+
+#right ul{
+	list-style:url(images/list.gif);	
+}
+
+#footer{
+	background:url(images/footer.gif) no-repeat;
+	padding: 10px 0 0 0;
+	clear: both;
+	text-align:center;
+}

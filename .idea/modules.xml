@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/system-modules/local-web-app/local-web-app.iml" filepath="$PROJECT_DIR$/system-modules/local-web-app/local-web-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/system-domain/system-domain.iml" filepath="$PROJECT_DIR$/system-domain/system-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/system-modules/system-modules.iml" filepath="$PROJECT_DIR$/system-modules/system-modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/system-parent.iml" filepath="$PROJECT_DIR$/system-parent.iml" />
+    </modules>
+  </component>
+</project>
